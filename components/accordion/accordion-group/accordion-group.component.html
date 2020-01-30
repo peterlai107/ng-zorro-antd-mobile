@@ -16,7 +16,7 @@
   [@slide]="slide"
   (@slide.done)="slideAnimationDoen($event)"
 >
-  <div [hidden]="isShowChild" class="am-accordion-content-box">
+  <div [hidden]="!isShowChild" class="am-accordion-content-box">
     <ng-content></ng-content>
   </div>
 </div>
